@@ -28,6 +28,7 @@ export const detailedUser = async (id) => {
 };
 
 export const addUser = async (data) => {
+  console.log('1')
   data.password = await bcrypt.hash(data.password, 8) 
   const user = new User(data);
   return await user.save();
