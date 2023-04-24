@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node -r dotenv-safe/config ./dist/app.js"
   },
   "author": "",
   "license": "ISC",
