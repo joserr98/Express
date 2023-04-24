@@ -25,4 +25,4 @@ app.use("/pokemon", pokemonRouter);
 app.use("/user", userRouter);
 // app.use(handlerError);
 
-app.listen(3000, () => console.log("Servidor levantado en 3000"));
+app.listen(config.PORT, () => console.log("Servidor levantado en 3000"));
